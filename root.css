@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* em {
+  font-weight: 500;
+  color: var(--color-primary);
+} */
+
+
+
+
+/*=====================================
+    BODY HTML CSS DECALARATIONS
+=====================================*/
+/****************GOOD TO HAVES*****************/
+
+:ROOT {
+    --color-primary:#EB662B;
+    --color-secondary:#05073C;
+    
+
+    --bg-primary:#EB662B;
+    --bg-secondary:#05073C; 
+    --bg-white: #FFFFFF;
+    --bg-white_2: #F5F5F5;
+
+
+    --text-primary: #05073C;
+    --text-secondary: #EB662B;
+    --text-black:#000000;
+    --text-gray:#757575;
+    --text-white: #FFFFFF;
+    --text-navblue:#4A43C4;
+
+  }
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+ 
+  body h2, body h3, body h4, body h5{
+   
+    letter-spacing: 0;
+    color: var(--text-primary);
+ 
+  }
+   
+
+  body h1 {
+    font-size: 3.983125rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 5.25rem;
+    /* color: var(--text-white); */
+  }
+
+  /* //intended for sub headers */
+  body h2 { 
+    font-size: 1.83125rem;
+    font-weight: 700;
+    /* letter-spacing: 0;
+    color: var(--text-primary); */ 
+  }
+
+  body h3 {
+  font-size: 1.1025rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  /* line-height: 1.6875rem;
+  color: var(--text-primary); */
+  }
+
+
+  body h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    /* line-height: 1.875rem;
+    color: var(--text-primary); */
+  }
+
+
+  body h5 {
+
+    font-size: 1.11625rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    /* line-height: 1.6875rem;
+    color: var(--text-primary); */
+     
+  }
+
+
+  body h6 {
+  
+  }
+
+  body p{
+
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 1.09rem;
+    line-height: 1.875rem;
+    letter-spacing: 0;
+
+  }
+
+
+  body small, body li{
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 14.41px;
+    line-height: 1.7rem;
+    letter-spacing: 0;
+  }
+
+
+  button{
+    font-size: 14.3px;
+    font-weight: 500;
+    line-height: 1.7rem;
+    letter-spacing: 0;
+  }
+
+
+ 
+
+/* 
+  
+  body em {
+    font-weight: 700;
+  }
+
+  body small {
+    font-size: 0.8rem;
+  } */
+  
+
+
+ 
+  button {
+    color: var(--font-primary);
+    cursor: pointer;
+  }
+  
+  .btn_main {
+    padding: 12px 21px;
+    background-color: var(--bg-primary);
+    font-size: 14.3px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 200px;
+    /* transition: all 0.2s ease-in-out; */
+    line-height: 1.75rem;
+  }
+
+
+    img {
+      vertical-align: top;
+    }
+   
+ 
+  .btn_main:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+ 
+  }
+  
+
+  .btn_secondary {
+    padding: 20px 30px;
+    font-size: 14.65px;
+    border-radius: 12x;
+    line-height: 1.75rem;
+    
+  }
+
+
+  .btn_secondary:hover{
+    opacity: 0.4;
+    transition: all 0.2s ease-in-out;
+  }
+
+
+
+  .w_1320{
+    width: 70%;
+  }
+  .w_1800{
+    width: 94%;
+  }
+
+  .w_1530{
+    width: 80%;
+  }
+
+
+  .p_60 {
+    padding: 60px 0 60px 0;
+ }
