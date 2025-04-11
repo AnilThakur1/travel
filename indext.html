@@ -1,22 +1,1028 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="root.css">
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- This is font awesome icon link -->
+  <title>travel_website</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+
+
+</head>
+
+<body>
+
+  <!-- header section ************************************* -->
+  <header class="mainnav">
+
+    <div class="divnav w_1320">
+
+      <div class="logo_search">
+
+        <div class="logo">
+          <img class="header_image" src="assets/images/logo-1.svg.png" alt="">
+        </div>
+
+        <input type="text" class="header_search" placeholder="Search destinations or activities">
+      </div>
+
+      <div class="nav_btn">
+
+        <ul class="navlink">
+          <li> <a href="">Destinations</a></li>
+          <li><a href="">Activities</a></li>
+          <li><a href="">USD</a></li>
+          <li><a href="">Sign up</a></li>
+
+        </ul>
+
+        <butto class="btn_main">log in</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- section landing page ********************************* -->
+
+  <main class="landing_page">
+
+
+    <div class="landing_page_wrapper w_1800">
+
+      <img class="landing_photo" src="assets/images/image.png" alt="">
+
+      <div class="landing_detail">
+        <h1 class="landing_h1">Your world of joy</h1>
+        <p class="landing_para">From local escapes to far-flung adventures, find what makes you happy anytime, anywhere
+        </p>
+
+
+
+        <div class="hotel">
+
+
+          <div class="hotel_location hotel_search">
+            <h5 class="hotel_heading5">Location</h5>
+
+            <div class="location_search_icons">
+              <i class="fa-solid fa-magnifying-glass Search_icon"></i>
+              <input type="text" id="location" class="location_search" placeholder="Enter a location" />
+            </div>
+
+
+          </div>
+
+
+
+
+
+          <div class="hotel_Room hotel_search">
+            <h5 class="hotel_heading5">Room</h5>
+
+
+            <div class="location_search_icons">
+              <i class="fa-solid fa-hotel Search_icon"></i>
+
+              <input type="number" id="room" class="location_search Select_room" placeholder="Select Rooms" min="1" />
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+          <div class="hotel_Check hotel_search">
+
+            <h5 class="hotel_heading5">Check in</h5>
+
+
+            <div class="location_search_icons">
+              <i class="fa-solid fa-calendar-days Search_icon"></i>
+              <input type="date" id="check" class="location_search check_in" placeholder="Set Date">
+            </div>
+
+
+          </div>
+
+
+
+
+          <div class="Check_out">
+            <h5 class="hotel_heading5">Check out</h5>
+
+            <div class="location_search_icons Search_icon">
+              <i class="fa-solid fa-calendar-days"></i>
+              <input type="date" id="cout" class="location_search check_out" placeholder="Set Date">
+            </div>
+
+          </div>
+
+          <button class="btn_main hotel_butto"><i class="fa-solid fa-magnifying-glass checkout_btn_icon"></i>
+            Search</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
+  <!-- tour section ******************************** -->
+
+  <section class="tour_section">
+    <div class="tour_section_wrapper w_1320 p_60">
+      <h2 class="tour_heading4">Why choose Tourz</h2>
+
+
+      <div class="tour_section_all">
+
+
+        <!-- 1 -->
+        <div class="tour">
+          <img class="tour_image_icon" src="assets/images/ticket.svg.png" alt="">
+
+          <div class="tour_ultimate_detail">
+            <h3 class="tour_heading_h3">Ultimate Flexibility</h3>
+
+            <p class="tour_paragraph">
+              You're in control, with free
+              cancellation and payment options to
+              satisfy any plan or budget</p>
+
+          </div>
+
+        </div>
+
+        <!-- 2 -->
+
+        <div class="tour">
+          <img class="tour_image_icon" src="assets/images/hot-air-balloon.svg.png" alt="">
+
+          <div class="tour_Memorable_detail">
+            <h3 class="tour_heading_h3">Memorable experiences</h3>
+
+            <p class="tour_paragraph">
+              Browse and book tours and activities
+              so incredible, you'll want to tell your
+              friends.</p>
+
+          </div>
+
+        </div>
+
+        <!-- 3 -->
+
+        <div class="tour">
+          <img class="tour_image_icon" src="assets/images/diamond.svg.png" alt="">
+
+          <div class="tour_quality_detail">
+            <h3 class="tour_heading_h3">Quality at our core</h3>
+
+            <p class="tour_paragraph">
+              High-quality standards. Millions of reviews. A tourz company.</p>
+
+          </div>
+
+        </div>
+
+        <!-- 4 -->
+        <div class="tour">
+          <img class="tour_image_icon" src="assets/images/medal.svg.png" alt="">
+
+          <div class="tour_award_detail">
+            <h3 class="tour_heading_h3">Award-winning support</h3>
+
+            <p class="tour_paragraph">
+              New price? New plan? No problem.
+              We're here to help, 24/7.</p>
+
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- destinations section ***************** -->
+
+  <section class="destinations">
+    <div class="destinations_wrapper w_1320 p_buttom_60">
+
+      <div class="destination_heading">
+        <h2>Trending destinations</h2>
+
+        <a href="" class="destination_allphoto">See all</a>
+      </div>
+
+
+
+      <div class="destination_images owl-carousel owl-theme">
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (9).png" alt="">
+            <h3 class="destination_heading3">Paris</h3>
+            <p class="destination_para">100+ Tours</p>
+
+          </a>
+        </div>
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (1).png" alt="">
+            <h3 class="destination_heading3">Singapore</h3>
+            <p class="destination_para">300+ Tours</p>
+
+          </a>
+        </div>
+
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (2).png" alt="">
+            <h3 class="destination_heading3">Roma</h3>
+            <p class="destination_para">400+ Tours</p>
+
+          </a>
+        </div>
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (3).png" alt="">
+            <h3 class="destination_heading3">Bankok</h3>
+            <p class="destination_para">100+ Tours</p>
+
+          </a>
+        </div>
+
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (4).png" alt="">
+            <h3 class="destination_heading3">Bali</h3>
+            <p class="destination_para">600+ Tours</p>
+
+          </a>
+        </div>
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (6).png" alt="">
+            <h3 class="destination_heading3">Phuket</h3>
+            <p class="destination_para">200+ Tours</p>
+
+          </a>
+        </div>
+
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (7).png" alt="">
+            <h3 class="destination_heading3">Tokyo</h3>
+            <p class="destination_para">700+ Tours</p>
+
+          </a>
+        </div>
+
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (8).png" alt="">
+            <h3 class="destination_heading3">Cappadocia</h3>
+            <p class="destination_para">900+ Tours</p>
+
+          </a>
+        </div>
+
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (9).png" alt="">
+            <h3 class="destination_heading3">Paris</h3>
+            <p class="destination_para">100+ Tours</p>
+
+          </a>
+        </div>
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (1).png" alt="">
+            <h3 class="destination_heading3">Singapore</h3>
+            <p class="destination_para">300+ Tours</p>
+
+          </a>
+        </div>
+
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (2).png" alt="">
+            <h3 class="destination_heading3">Roma</h3>
+            <p class="destination_para">400+ Tours</p>
+
+          </a>
+        </div>
+
+        <div class="images_detail">
+          <a href="">
+            <img class="tour_image" src="assets/images/image (3).png" alt="">
+            <h3 class="destination_heading3">Bankok</h3>
+            <p class="destination_para">100+ Tours</p>
+
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- popolar tours ****************************** -->
+
+  <section popolar_tours>
+
+    <div class="popular_tour_wrapper destinations_wrapper w_1320 p_buttom_60">
+
+      <div class="destination_heading">
+        <h2>Find Popular Tours</h2>
+
+        <a href="" class="destination_allphoto">See all</a>
+      </div>
+
+
+
+      <div class="tour_cards">
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_1.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">Paris, France</span>
+              </div>
+
+              <h3 class="card_heading3">Centipede Tour - Guided Arizona
+                Desert Tour by ATV</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$189.25</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_2.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">New York, USA</span>
+              </div>
+
+              <h3 class="card_heading3">Molokini and Turtle Town
+                Snorkeling Adventure Aboard</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$225</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_3.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">London, UK</span>
+              </div>
+
+              <h3 class="card_heading3">Westminster Walking Tour &
+                Westminster Abbey Entry</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$943</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_4.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">New York, USA</span>
+              </div>
+
+              <h3 class="card_heading3">All Inclusive Ultimate Circle Island
+                Day Tour with Lunch</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$771</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_5.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">Paris, France</span>
+              </div>
+
+              <h3 class="card_heading3">Space Center Houston Admission
+                Ticket</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$189.25</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_6.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">New York, USA</span>
+              </div>
+
+              <h3 class="card_heading3">Clear Kayak Tour of Shell Key
+                Preserve and Tampa Bay Area</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$225</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_7.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">London, UK</span>
+              </div>
+
+              <h3 class="card_heading3">History and Hauntings of Salem
+                Guided Walking Tour</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$943</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="card_description">
+
+            <div class="card_image">
+              <img src="assets/images/tour_image_8.jpg" alt="">
+
+              <div class="round">
+                <a href=""> <i class="fa-solid fa-arrow-right font_awesome_icon"></i></a>
+              </div>
+
+            </div>
+
+            <div class="tour_detail">
+
+
+              <div class="location">
+                <span><i class="fa-regular fa-compass font_awesome_icon"></i></span>
+                <span class="location_name">New York, USA</span>
+              </div>
+
+              <h3 class="card_heading3">Mauna Kea Summit Sunset and
+                Stars Free Astro Photos</h3>
+
+              <div class="rating">
+
+                <ul class="rating_star">
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                  <li class="fa-solid fa-star font_awesome_icon"></li>
+                </ul>
+
+                <span class="rating_number">4.8 (243)</span>
+
+              </div>
+              <div class="time">
+
+                <div class="day">
+                  <span><i class="fa-regular fa-hourglass font_awesome_icon"></i></span>
+                  <span class="day_4">4 days</span>
+                </div>
+
+
+                <div class="price">
+                  <span class="from">From</span>
+                  <span class="rate">$771</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- tour_offer ****************************************************** -->
+
+  <section class="offer">
+
+    <div class="offer_wrapper w_1530 p_buttom_60">
+
+ 
+      <img class="offer_bg_image" src="assets/images/offer_background.png" alt="">
+     
+
+    <div class="offer_detail">
+
+      <div class="discount">
+        <p class="price_bold">Grab up to <span class="price_off">35% off</span> 
+          on your favorite
+          Destination</p>
+  
+          <p class="price_thin">Limited time offer, don't miss the opportunity</p>
+  
+          <button class="btn_main book_btn">Book Now</button>
+  
+           
+      </div>
+        <!-- <img class="offer_image offer_design" src="assets/images/offer_design.png" alt=""> -->
+        <img class="offer_image" src="assets/images/air_ballon_image.png" alt="">
+
+    </div>
+
+
+
+    </div>
+
+     
+  </section>
+
+
+  <!-- thing_section ************************************* -->
+
+  <section class="thing_section">
+
+    <div class="thing_section_wrapper w_1320 p_60 ">
+
+      <div class="destination_heading thing_heading4">
+        <h2>Popular thing to do</h2>
+
+        <a href="" class="destination_allphoto">See all</a>
+      </div>
+
+
+      <div class="thing_all_image">
+
+        <div class="first_300">
+
+          <div class="cruises">
+            <img class="thing_image" src="assets/images/cruises.jpg" alt="">
+            <h4 class="thing_image_heading4">Cruises</h4>
+
+            <div class="overlay">
+
+            </div>
+            
+          </div>
+      
+          <div class="museum">
+          <img class="thing_image" src="assets/images/museum.jpg" alt="">
+          <h4 class="thing_image_heading4">Museum Tours</h4>
+
+          <div class="overlay">
+              
+          </div>
+
+        </div>
+          
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
     
 
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="style.css">
+    </div>
+
+  </section>
+
+
+
 
    
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- This is font awesome icon link -->
-    <title>travel_website</title>
-</head>
-<body>
-    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cumque reprehenderit in unde illo omnis pariatur possimus commodi cum quaerat. Est fugit sequi incidunt sint consequatur rem ullam, voluptates iusto?</h1>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Include jQuery and Owl Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Initialize Owl Carousel -->
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 20,
+        nav: false,
+        dots: true,
+        responsive: {
+          400: { items: 1 },
+
+          600: { items: 2 },
+
+          1000: { items: 4 },
+
+          1200: { items: 6 },
+
+          1320: { items: 8 }
+
+        }
+      });
+    });
+  </script>
+
+
+
+
+
+
+  <footer>
+
+  </footer>
+
+
 </body>
+
 </html>

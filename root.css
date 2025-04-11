@@ -23,25 +23,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -90,22 +96,23 @@ table {
   
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: "inter";
   }
   
  
-  body h2, body h3, body h4, body h5{
+ body h1, body h2, body h3, body h4, body h5{
    
     letter-spacing: 0;
     color: var(--text-primary);
+    line-height: 1.5;
  
   }
    
 
   body h1 {
-    font-size: 3.983125rem;
+    font-size: 4rem;
     font-weight: 600;
-    letter-spacing: 0;
-    line-height: 5.25rem;
     /* color: var(--text-white); */
   }
 
@@ -113,35 +120,29 @@ table {
   body h2 { 
     font-size: 1.83125rem;
     font-weight: 700;
-    /* letter-spacing: 0;
-    color: var(--text-primary); */ 
+   
+ 
   }
 
   body h3 {
   font-size: 1.1025rem;
   font-weight: 500;
-  letter-spacing: 0;
-  /* line-height: 1.6875rem;
-  color: var(--text-primary); */
+  
   }
 
 
   body h4 {
     font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: 0;
-    /* line-height: 1.875rem;
-    color: var(--text-primary); */
+      
   }
 
 
   body h5 {
 
-    font-size: 1.11625rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    /* line-height: 1.6875rem;
-    color: var(--text-primary); */
+    /* font-size: 1.11625rem; */
+    font-size: 14px;
+    font-weight: 500;  
      
   }
 
@@ -154,8 +155,8 @@ table {
 
     color: var(--text-primary);
     font-weight: 500;
-    font-size: 1.09rem;
-    line-height: 1.875rem;
+    font-size: 1rem;
+    line-height: 1.5;
     letter-spacing: 0;
 
   }
@@ -164,16 +165,17 @@ table {
   body small, body li{
     color: var(--text-primary);
     font-weight: 400;
-    font-size: 14.41px;
-    line-height: 1.7rem;
+    font-size: 14px;
+    line-height: 1.5;
     letter-spacing: 0;
+    font-family: "inter"
   }
 
 
   button{
     font-size: 14.3px;
     font-weight: 500;
-    line-height: 1.7rem;
+    line-height: 1.5;
     letter-spacing: 0;
   }
 
@@ -190,7 +192,9 @@ table {
     font-size: 0.8rem;
   } */
   
-
+  a{
+    text-decoration: none;
+   }
 
  
   button {
@@ -199,17 +203,19 @@ table {
   }
   
   .btn_main {
-    padding: 12px 21px;
+    padding: 12px 20px;
     background-color: var(--bg-primary);
+    color: var(--text-white);
     font-size: 14.3px;
     letter-spacing: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border: none;
     font-weight: 500;
     cursor: pointer;
     border-radius: 200px;
     /* transition: all 0.2s ease-in-out; */
-    line-height: 1.75rem;
+    line-height: 1.5;
+     
   }
 
 
@@ -229,7 +235,7 @@ table {
     padding: 20px 30px;
     font-size: 14.65px;
     border-radius: 12x;
-    line-height: 1.75rem;
+    line-height: 1.5;
     
   }
 
@@ -242,10 +248,12 @@ table {
 
 
   .w_1320{
-    width: 70%;
+    width: 69%;
   }
   .w_1800{
     width: 94%;
+    
+    
   }
 
   .w_1530{
@@ -254,5 +262,13 @@ table {
 
 
   .p_60 {
-    padding: 60px 0 60px 0;
+    padding: 120px 0 120px 0;
  }
+
+ .p_buttom_60{
+  padding-bottom: 120px;
+ }
+
+
+
+ 
