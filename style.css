@@ -96,8 +96,8 @@
 
 .landing_detail {
   text-align: center;
-  width: 43%;
-  margin: 0 auto;
+  /* width: 43%;
+  margin: 0 auto; */
 }
 
 .landing_h1 {
@@ -273,7 +273,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .location_name {
@@ -281,12 +281,19 @@
 }
 
 .card {
-  width: 23%;
-  /* height: 388px; */
+  /* width: 23%; */
+  /* max-width: calc(25% - 23px); */
+
   border: 1px solid #E7E6E6;
   padding: 11px;
   border-radius: 12px;
 }
+
+.card2{
+  max-width: calc(25% - 23px); 
+}
+
+
 
 .card_description img {
   width: 100%;
@@ -317,7 +324,7 @@
   position: absolute;
   bottom: -9%;
   right: 5%;
-  z-index: 3;
+  z-index: 9;
 
 }
 
@@ -725,7 +732,7 @@
   width: 110%;
   top: 45%;
   right: -66px;
-  z-index: 999
+  z-index: -1;
 }
 
 
@@ -747,6 +754,15 @@
   color: var(--text-gray);
   font-size: 16px;
 }
+
+ 
+
+ 
+
+
+ 
+
+ 
 
 
 /* section_review ******************************** */

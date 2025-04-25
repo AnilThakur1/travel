@@ -262,14 +262,15 @@ table {
   }
 
 
-  .p_60 {
-    padding: 120px 0 120px 0;
- }
+  
 
  .p_buttom_60{
   padding-bottom: 120px;
  }
 
+ .p_60{
+  padding: 120px 0 120px 0;
+}
 
 
  
