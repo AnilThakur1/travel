@@ -557,6 +557,7 @@ gap: 35px;
   width: 100%;
   box-sizing: border-box;
   color: var(--text-black);
+  outline: none;
 }
 
  
@@ -597,7 +598,7 @@ gap: 35px;
 
 .booking_card {
     position: sticky;
-    top: 0;
+    top: 1px;
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
