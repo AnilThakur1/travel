@@ -65,6 +65,10 @@
 }
 
 
+.hamburger_mobile{
+  display: none;
+}
+
 
 
 /* section landing page ****************************** */
@@ -448,13 +452,14 @@
 
 .offer_design_row{
   position:  absolute;
-  right: 48%;
   z-index: 34; 
+  left: 0;
+  height: 100%;
 }
 
 .offer_image {
   width: 100%;
-  height: 606px;
+  /* height: 606px; */
   border-radius: 0 12px 12px 0;
 }
 
@@ -490,6 +495,9 @@
 
 /* thing_section ************************************* */
 
+.thing_image_mobile{
+  display: none;
+}
 .thing_all_image {
   display: flex;
   gap: 30px;
@@ -524,19 +532,13 @@
   object-fit: cover;
 }
 
-.overlay {
+.thing_overlay {
   width: 100%;
-  height: 240px;
+  height: 200px;
   position: absolute;
   z-index: 16;
   bottom: 0;
   border-radius: 12px;
-}
-
-.overlay:hover {
-  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
-
-
 }
 
 .cruises,
@@ -544,12 +546,28 @@
   position: relative;
 }
 
+.overlay{
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 12px;
+}
+
+.overlay:hover {
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+
+}
+
+
+
 .thing_image_heading4 {
   position: absolute;
   bottom: 10px;
   left: 15px;
   z-index: 33;
 }
+
 
 .second_410 {
   width: 31%;
@@ -852,6 +870,7 @@
 .second_offer_wrapper {
   background-image: url('assets/images/bg_second_offer.png');
   width: 100%;
+ 
   /* height: 514px; */
   border-radius: 12px;
   background-repeat: no-repeat;

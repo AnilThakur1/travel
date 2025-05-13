@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="responsive.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -35,24 +36,48 @@
       </div>
 
       <div class="nav_btn">
-
         <ul class="navlink">
           <li> <a href="">Destinations</a></li>
           <li><a href="">Activities</a></li>
           <li><a href="">USD</a></li>
           <li><a href="">Sign up</a></li>
-
         </ul>
-
-        <butto class="btn_main">log in</button>
+        <button class="btn_main">log in</button>
       </div>
+
+
+      
+
+
+  <div class="hamburger_mobile">
+    
+    <button onclick="toggleHamburger()" id="hamburger">
+      <i class="fa-solid fa-bars hamburger_icon"></i>
+    </button>
+
+    <ul class="navlink_mobile" id="navlink_mobile">
+
+      <input type="text" class="header_search header_search_mobile" placeholder="Search Here">
+      <li><a href="">Destinations</a></li>
+      <li><a href="">Activities</a></li>
+      <li><a href="">USD</a></li>
+      <li><a href="">Sign up</a></li>
+      <li><a href="">Login</a></li>
+    </ul>
+
+  </div>
+ 
+
+ 
+
+
+
+
 
     </div>
   </header>
 
-
-
-  <!-- list head ***************************************-->
+ <!-- list head *********I********************************************-->
 
   <div class="list">
 
@@ -68,10 +93,17 @@
       <h1 class="list_head">Explore all things to do in Phuket</h1>
        
 
+<div class="list_cards">
 
-    <div class="list_cards">
+   
+<button class="btn_main book_now_buttom" onclick="book_now()" id="list_book_btn">Filter</button>
 
-        <div class="travling_card">
+ 
+
+ 
+
+   <div class="travling_card"  id="travlingCard">
+
           <div class="list_date">
             <p class="list_question">When are you traveling?</p>
             <input type="date" placeholder="Select Date">
@@ -99,17 +131,23 @@
         </div>
 
 
+
+
       <!-- second card result **************************** -->
 
         <div class="list_result">
 
         <div class="list_first_card">
+
+  
+
+         
           
          <div class="result_image">
           <img class="result_photo" src="assets/images/result_1.png" alt="Tour Image">
 
           <div class="offer_discount">
-            <span class="twenty_off">20 % OFF</span>
+            <span class="twenty_off">20% OFF</span>
           </div>
 
          <div class="offer_round">
@@ -142,10 +180,30 @@
             <div class="result_anker">
               <a class="best_price" href=""><i class="fa-solid fa-tag"></i>Best Price Guarantee</a>
               <a class="cancellation" href=""><i class="fa-solid fa-xmark"></i>Free Cancellation</a>
-
             </div>
 
+
+          <div class="result_buttom_btn">
+
+            <div class="tour_rate">
+            <p class="list_day">2 Days 1 Nights</p class="result_duration">
+            <p class="result_discounted_para">From <span>$114</span> </p>
+          </div>
+
+
+          <div>
+          <button class="view_details btn_main">View Details</button>  
+          </div>
+           
+
+          </div>
+
+
+            
+
          </div>
+
+    
 
 
          <div class="result_buttom">
@@ -162,9 +220,6 @@
             </div>
               <button class="view_details btn_main">View Details</button>
             </div>
-          
-           
- 
            
          </div>
 
@@ -178,7 +233,7 @@
              <img class="result_photo" src="assets/images/listimage_3.png" alt="Tour Image">
    
              <div class="offer_discount">
-               <span class="twenty_off">20 % OFF</span>
+               <span class="twenty_off">20% OFF</span>
              </div>
    
             <div class="offer_round">
@@ -213,6 +268,24 @@
                  <a class="cancellation" href=""><i class="fa-solid fa-xmark"></i>Free Cancellation</a>
    
                </div>
+
+
+               
+
+          <div class="result_buttom_btn">
+
+            <div class="tour_rate">
+            <p class="list_day">2 Days 1 Nights</p class="result_duration">
+            <p class="result_discounted_para">From <span>$114</span> </p>
+          </div>
+
+
+          <div>
+          <button class="view_details btn_main">View Details</button>  
+          </div>
+           
+
+          </div>
    
             </div>
    
@@ -282,6 +355,23 @@
                    <a class="cancellation" href=""><i class="fa-solid fa-xmark"></i>Free Cancellation</a>
      
                  </div>
+
+                 
+
+          <div class="result_buttom_btn">
+
+            <div class="tour_rate">
+            <p class="list_day">2 Days 1 Nights</p class="result_duration">
+            <p class="result_discounted_para">From <span>$114</span> </p>
+          </div>
+
+
+          <div>
+          <button class="view_details btn_main">View Details</button>  
+          </div>
+           
+
+          </div>
      
               </div>
      
@@ -316,7 +406,7 @@
                  <img class="result_photo" src="assets/images/listimage_5.png" alt="Tour Image">
        
                  <div class="offer_discount">
-                   <span class="twenty_off">20 % OFF</span>
+                   <span class="twenty_off">20% OFF</span>
                  </div>
        
                 <div class="offer_round">
@@ -351,6 +441,23 @@
                      <a class="cancellation" href=""><i class="fa-solid fa-xmark"></i>Free Cancellation</a>
        
                    </div>
+
+                   
+
+          <div class="result_buttom_btn">
+
+            <div class="tour_rate">
+            <p class="list_day">2 Days 1 Nights</p class="result_duration">
+            <p class="result_discounted_para">From <span>$114</span> </p>
+          </div>
+
+
+          <div>
+          <button class="view_details btn_main">View Details</button>  
+          </div>
+           
+
+          </div>
        
                 </div>
        
@@ -385,7 +492,7 @@
                    <img class="result_photo" src="assets/images/listimage_6.png" alt="Tour Image">
          
                    <div class="offer_discount">
-                     <span class="twenty_off">20 % OFF</span>
+                     <span class="twenty_off">20% OFF</span>
                    </div>
          
                   <div class="offer_round">
@@ -420,6 +527,23 @@
                        <a class="cancellation" href=""><i class="fa-solid fa-xmark"></i>Free Cancellation</a>
          
                      </div>
+
+                     
+
+          <div class="result_buttom_btn">
+
+            <div class="tour_rate">
+            <p class="list_day">2 Days 1 Nights</p class="result_duration">
+            <p class="result_discounted_para">From <span>$114</span> </p>
+          </div>
+
+
+          <div>
+          <button class="view_details btn_main">View Details</button>  
+          </div>
+           
+
+          </div>
          
                   </div>
          
@@ -454,7 +578,7 @@
                      <img class="result_photo" src="assets/images/lisimage_2.png" alt="Tour Image">
            
                      <div class="offer_discount">
-                       <span class="twenty_off">20 % OFF</span>
+                       <span class="twenty_off">20% OFF</span>
                      </div>
            
                     <div class="offer_round">
@@ -489,6 +613,23 @@
                          <a class="cancellation" href=""><i class="fa-solid fa-xmark"></i>Free Cancellation</a>
            
                        </div>
+
+                       
+
+          <div class="result_buttom_btn">
+
+            <div class="tour_rate">
+            <p class="list_day">2 Days 1 Nights</p class="result_duration">
+            <p class="result_discounted_para">From <span>$114</span> </p>
+          </div>
+
+
+          <div>
+          <button class="view_details btn_main">View Details</button>  
+          </div>
+           
+
+          </div>
            
                     </div>
            
@@ -516,27 +657,18 @@
            
            
                      </div>
-
-
-
-
-        
-
-       
+         
 
         </div>
 
-        
 
-
-        
-
-
-
-
+      
       </div>
 
  
+
+
+       
      
     </div>
     </div>
@@ -548,36 +680,6 @@
 
      
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <!-- footer section ***************************** -->
@@ -656,6 +758,32 @@
     </div>
   </div>
   
+
+
+
+
+  <script>
+
+  function toggleHamburger() {
+  const nav = document.getElementById("navlink_mobile");
+  nav.classList.toggle("active");     
+  }
+
+</script>
+
+
+
+
+
+
+<script>
+  function book_now() {
+  document.getElementById("travlingCard").classList.toggle("active");
+  }
+</script>
+
+ 
+
 
     
 </body>

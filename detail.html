@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="list.css">
   <link rel="stylesheet" href="detail.css">
+  <link rel="stylesheet" href="responsive.css">
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -25,7 +26,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+
  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 
 
 
@@ -48,17 +53,43 @@
       </div>
 
       <div class="nav_btn">
-
         <ul class="navlink">
           <li> <a href="">Destinations</a></li>
           <li><a href="">Activities</a></li>
           <li><a href="">USD</a></li>
           <li><a href="">Sign up</a></li>
-
         </ul>
-
-        <butto class="btn_main">log in</button>
+        <button class="btn_main">log in</button>
       </div>
+
+
+      
+
+
+  <div class="hamburger_mobile">
+    
+    <button onclick="toggleHamburger()" id="hamburger">
+      <i class="fa-solid fa-bars hamburger_icon"></i>
+    </button>
+
+    <ul class="navlink_mobile" id="navlink_mobile">
+
+      <input type="text" class="header_search header_search_mobile" placeholder="Search Here">
+      <li><a href="">Destinations</a></li>
+      <li><a href="">Activities</a></li>
+      <li><a href="">USD</a></li>
+      <li><a href="">Sign up</a></li>
+      <li><a href="">Login</a></li>
+    </ul>
+
+  </div>
+ 
+
+ 
+
+
+
+
 
     </div>
   </header>
@@ -127,25 +158,83 @@
 
 
 
-        <div class="detail_images p_buttom_60">
-          <div class="first_iamge_div">
-            <img class="di_1" src="assets/images/detail_image1.png" alt="">
-          </div>
 
+
+        <div class="detail_images p_buttom_60">
+          <div class="first_image_div">
+
+            <a class="di_1" href="assets/images/detail_image1.png" data-lightbox="gallery">
+              <img class="d_image1" src="assets/images/detail_image1.png" alt="">
+            </a>
+          </div>
+        
           <div class="second_image_div">
-            <img class="di_2" src="assets/images/detail_image2.png" alt="">
+
+            <a  class="di_2" href="assets/images/detail_image2.png" data-lightbox="gallery">
+              <img class="d_image2" src="assets/images/detail_image2.png" alt="">
+            </a>
+            
             <div class="third_image_div">
-              <img class="di_3" src="assets/images/detail_image3.png" alt="">
-              <img class="di_4" src="assets/images/detail_image4.png" alt="">
+          
+              <a class="di_3" class="third_image_anker" href="assets/images/detail_image3.png" data-lightbox="gallery">
+                <img class="d_image3" src="assets/images/detail_image3.png" alt="">
+              </a>
+
+              <a class="di_4" class="third_image_anker" href="assets/images/detail_image4.png" data-lightbox="gallery">
+                <img class="d_image4" src="assets/images/detail_image4.png" alt="">
+              </a>
+        
 
               <div class="allphoto">
-                <a href="">See all photots</a>
+                <a href="assets/images/detail_image1.png" data-lightbox="gallery">See all photos</a>
               </div>
-
+              
             </div>
           </div>
+        </div>
+
+
+
+        <div class="detail_images_mobile">
+
+           <a class="di_1" href="assets/images/detail_image1.png" data-lightbox="gallery">
+              <img class="d_image1" src="assets/images/detail_image1.png" alt="">
+            </a>
+
+
+            <a  class="di_2" href="assets/images/detail_image2.png" data-lightbox="gallery">
+              <img class="d_image2" src=" assets/images/detail_image4_1.jpg" alt="">
+            </a>
+
+
+            <a class="di_3" class="third_image_anker" href="assets/images/detail_image3.png" data-lightbox="gallery">
+                <img class="d_image3" src="assets/images/detail_image3.png" alt="">
+              </a>
+
+
+              <a class="di_4" class="third_image_anker" href="assets/images/detail_image4.png" data-lightbox="gallery">
+                <img class="d_image4" src="assets/images/detail_image4.png" alt="">
+                
+              </a>
+
+
+                <div class="allphoto allphoto_mobile">
+                <a href="assets/images/detail_image1.png" data-lightbox="gallery">See all photos</a>
+              </div>
+              
+
+
+
 
         </div>
+        
+
+        
+
+
+
+
+
 
         <!-- detail_card_all ************************************** -->
 
@@ -380,10 +469,12 @@
 
               <h2 class="map_heading2">Tour Map</h2>
 
-              <div><iframe
+              <div>
+                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60838472.930255905!2d54.913433238070354!3d21.457303665175285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3663f18a24cbe857%3A0xa9416bfcd3a0f459!2sAsia!5e0!3m2!1sen!2snp!4v1745471646883!5m2!1sen!2snp"
                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
             </section>
 
@@ -777,12 +868,15 @@
 
 
 
-
-
-
           <!--  detail_card2 ****************************************-->
 
-          <div class="detail_card2">
+
+
+             
+<button class="btn_main   filter_btn" onclick="filter_now()" id="filter_search_btn">Book</button>
+
+
+          <div class="detail_card2 " id="detailCard2">
 
 
             <section class="booking_card">
@@ -1416,28 +1510,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- footer section ***************************** -->
 
   <footer class="footer w_1800">
@@ -1567,6 +1639,19 @@
 
 
 
+
+
+  function toggleHamburger() {
+  const nav = document.getElementById("navlink_mobile");
+  nav.classList.toggle("active");
+}
+
+
+
+
+
+
+
  
 
 
@@ -1577,8 +1662,19 @@
 
 
 
- 
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+
+<script>
+  function filter_now() {
+  document.getElementById("detailCard2").classList.toggle("active");
+  }
+</script>
+
+ 
   
   
 

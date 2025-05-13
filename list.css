@@ -1,4 +1,11 @@
 /* list lhead  *********************************** */
+
+.book_now_buttom{
+    display: none;
+}
+
+
+
 .list_wrapper{
     margin: 0 auto;
 }
@@ -281,5 +288,9 @@ padding-right: 5px;
     background-color: #4A43C4;
 }
 
+
+.result_buttom_btn{
+    display: none;
+}
 
  

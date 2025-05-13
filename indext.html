@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="root.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+   
 
 
 
@@ -31,6 +33,7 @@
 <body>
 
   <!-- header section ************************************* -->
+
   <header class="mainnav">
 
     <div class="divnav w_1320">
@@ -45,20 +48,51 @@
       </div>
 
       <div class="nav_btn">
-
         <ul class="navlink">
           <li> <a href="">Destinations</a></li>
           <li><a href="">Activities</a></li>
           <li><a href="">USD</a></li>
           <li><a href="">Sign up</a></li>
-
         </ul>
-
         <button class="btn_main">log in</button>
       </div>
 
+
+      
+
+
+  <div class="hamburger_mobile">
+    
+    <button onclick="toggleHamburger()" id="hamburger">
+      <i class="fa-solid fa-bars hamburger_icon"></i>
+    </button>
+
+    <ul class="navlink_mobile" id="navlink_mobile">
+
+      <input type="text" class="header_search header_search_mobile" placeholder="Search Here">
+      <li><a href="">Destinations</a></li>
+      <li><a href="">Activities</a></li>
+      <li><a href="">USD</a></li>
+      <li><a href="">Sign up</a></li>
+      <li><a href="">Login</a></li>
+    </ul>
+
+  </div>
+ 
+
+ 
+
+
+
+
+
     </div>
   </header>
+
+
+   
+  
+
 
   <!-- section landing page ********************************* -->
 
@@ -235,7 +269,6 @@
 
         <a href="list.html" class="destination_allphoto">See all</a>
       </div>
-
 
 
       <div class="destination_images owl-carousel owl-theme">
@@ -876,9 +909,12 @@
 
       <div class="offer_image_div">
         <img class="offer_image" src="assets/images/air_ballon_image.png" alt="">
+
+        <img class="offer_design_row" src="assets/images/offer_design_strait.png" alt="">
+
       </div>
 
-      <img class="offer_design_row" src="assets/images/offer_design_strait.png" alt="">
+      <!-- <img class="offer_design_row" src="assets/images/offer_design_strait.png" alt=""> -->
 
 
     </div>
@@ -901,7 +937,7 @@
       <div class="destination_heading thing_heading4">
         <h2>Popular thing to do</h2>
 
-        <a href="list.html" class="destination_allphoto">See all</a>
+      <a href="list.html" class="destination_allphoto">See all</a>
       </div>
 
 
@@ -918,21 +954,28 @@
             </div>
 
           </div>
-      
+
+
           <div class="museum">
           <img class="thing_image" src="assets/images/museum.jpg" alt="">
           <h4 class="thing_image_heading4">Museum Tours</h4>
 
-          <div class="overlay">
-              
+          <div class="overlay">  
+             
           </div>
 
         </div>
-          
 
         </div>
 
+
+
+
+
+
         
+
+
         <div class="second_410">
 
           <img class="beach_image" src="assets/images/beach.jpg" alt="">
@@ -990,6 +1033,91 @@
 
       
     </div>
+
+
+
+
+
+
+    <div class="thing_image_mobile">
+
+
+    <div class="thing_mobile">
+     <img class="things_images things_images1" src="assets/images/cruises.jpg" alt="">
+      <h4 class="things_images_heading4">Cruises</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+    <div class="thing_mobile">
+     <img class="things_images" src="assets/images/museum.jpg" alt="">
+      <h4 class="things_images_heading4">Museum</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+
+     <div class="thing_mobile">
+      <img class="things_images" src="assets/images/city.jpg" alt="">
+      <h4 class="things_images_heading4">City</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+
+     <div class="thing_mobile">
+      <img class="things_images" src="assets/images/beach.jpg" alt="">
+      <h4 class="things_images_heading4">Beach</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+
+    <div class="thing_mobile things_images_100">
+       <img class="things_images" src="assets/images/tour_image_7.jpg" alt="">
+      <h4 class="things_images_heading4">Car</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+
+    <div class="thing_mobile">
+       <img class="things_images" src="assets/images/food.jpg" alt="">
+      <h4 class="things_images_heading4">Food</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+
+      <div class="thing_mobile">
+       <img class="things_images" src="assets/images/hiking.jpg" alt="">
+      <h4 class="things_images_heading4">Hiking</h4>
+     <div class="thing_overlay">
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+      
+
+       
+
+        
+
+        
+
+         
+        
+         
+    </div>
+
+
+
 
   </section>
 
@@ -1820,18 +1948,22 @@
       $(".destination_images").owlCarousel({
         loop: false,
         margin: 20,
-        nav: false,
+        nav: true,
         dots: true,
         responsive: {
-          400: { items: 1 },
+          250: { items: 2 },
 
-          600: { items: 2 },
+          400: { items: 3 },
+      
+          600: { items: 4 },
+     
+          800: { items: 5 },
 
-          1000: { items: 4 },
+          1000: { items: 6 },
 
-          1200: { items: 6 },
+          1200: { items: 7 },
 
-          1320: { items: 8 }
+          1320:{items: 8}
 
         }
       });
@@ -1875,6 +2007,14 @@ $(document).ready(function(){
   });
 
 
+
+
+function toggleHamburger() {
+  const nav = document.getElementById("navlink_mobile");
+  nav.classList.toggle("active");
+}
+
+
   </script>
 
 
@@ -1884,3 +2024,6 @@ $(document).ready(function(){
 </body>
 
 </html>
+
+
+

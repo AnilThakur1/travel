@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.filter_btn{
+  display: none;
+}
+
 .detail_landing{
     /* padding: 10px calc(15px) 0 calc(15px); */
     padding: 10px calc(15px) 0;
@@ -73,59 +77,76 @@
     color: var(--text-primary);
 }
 
+ 
 
-
-.detail_images{
-    display: flex;
-    gap: 10px;
-}
-
-.first_iamge_div{
-width: 60%;
+.first_image_div{
+  width: 60%;
 }
 
 .second_image_div{
-    display: flex;
-    flex-direction: column;
+  width: 40%;
+}
+
+
+ .detail_images{
+  display: flex;
     gap: 10px;
-    width: 40%;
-}
+ }
 
+ .detail_images_mobile{
+  display: none;
+ }
 
-.third_image_div{
-    display: flex;
-    gap: 10px;
-    position: relative;
-}
+ .second_image_div{
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+ }
 
-.di_1{
-    border-radius: 12px 0 0 12px;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.di_2{
-    border-radius: 0 12px 0 0;
-    object-fit: contain;
-    width: 100%;
-}
+ .third_image_div{
+  display: flex;
+  gap: 10px;
+ }
 
-.di_3{
-width: 49%;
-object-fit: contain;
-}
+ .third_image_div{
+  position: relative;
+ }
 
-.di_4{
-    border-radius: 0 0 12px 0;
-    object-fit: cover;
-    width: 49%;
-    
-}
+ .d_image1{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+  object-fit: cover;
+ }
 
-.allphoto a{
+ .d_image2{
+  width: 100%;
+  border-radius: 0 12px 0 0;
+  object-fit: contain;
+ }
+
+ .di_3,.di_4{
+  /* width: calc(50% - 5px); */
+  width: 49%;
+ }
+
+ .d_image3{
+  object-fit: contain;
+ }
+
+ .d_image4{
+  border-radius: 0 0 12px 0;
+  object-fit: cover;
+ }
+
+ .d_image3,.d_image4{
+  width: 100%;
+ }
+
+ 
+.allphoto {
     position: absolute;
     background-color: #05073C;
-     color: white;
      padding: 13px 20px;
      display: flex;
      align-items: center;
@@ -135,6 +156,11 @@ object-fit: contain;
      font-size: 13px;
 }
  
+.allphoto a{
+  color: white;
+}
+
+
 
 /* detail_card_all ****************************************** */
  
@@ -163,7 +189,7 @@ width: 29%;
 
 .detai_card1_box{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .detail_heading2{
