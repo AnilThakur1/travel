@@ -417,7 +417,7 @@ iframe{
 
 /* ********************************************************* */
 
-@media (min-width:600px) and (max-width:799px){
+@media (min-width:601px) and (max-width:799px){
 
 
   .divnav {
@@ -505,7 +505,7 @@ iframe{
 
 /* tour_offer **************************************** */
 .price_bold{
-     font-size: 2rem;
+     font-size: 1.75rem;
      line-height: 1.5;
 }
  
@@ -816,7 +816,66 @@ font-size: 12px;
 }
 
 
+  /* thing_section ************************************ */
+
+  .thing_section_wrapper {
+    width: 90%;
+  }
+
+  .thing_all_image{
+    display: none;
+  }
+
+  .thing_image_mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thing_mobile{
+    width: 47%;
+    position: relative;
+  }
+  .things_images_heading4{
+    position:  absolute;
+    color:white;
+    bottom: 10px;
+    left: 10px;
+    z-index: 19;
+  }
+
+ .thing_overlay {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: 17;
+  bottom: 0;
+  border-radius: 12px;
 }
+
+.thing_overlay:hover {
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+}
+  .things_images{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    
+  }
+
+  .things_images_100{
+    width: 97%;
+  }
+
+  .discount{
+    padding-left: 50px;
+  }
+
+
+}
+
 
 
 /* ************************************************************************ */
@@ -878,8 +937,12 @@ font-size: 12px;
 .result_discounted_para{
     font-size: 13px;
 }
+.result_discounted_para span{
+font-size: 1rem;
+} 
+
 .view_details {
-    padding:  10px 20px;
+    padding:  10px 15px;
 }
 .result_detail{
     width: 100%;
@@ -1162,6 +1225,9 @@ padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .thing_mobile{
@@ -1196,7 +1262,7 @@ padding-bottom: 0;
   }
 
   .things_images_100{
-    width: 100%;
+    width: 97%;
   }
 
  
@@ -1555,7 +1621,7 @@ font-size: 12px;
 }
 
   .calendar_all{
-        width: 100%;
+        width: 90%;
     }
 
     .ranking_info{
@@ -1603,6 +1669,12 @@ font-size: 12px;
     .thing_mobile{
         width: 100%;
     }
+
+     .list_head{
+        font-size: 1.75rem;
+    }
+ 
+ 
 
 
     .about_offer{
@@ -1683,10 +1755,10 @@ font-size: 12px;
     }
 
 
-
-
-
 }
+
+
+
 
 
 
