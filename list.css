@@ -43,8 +43,8 @@ input[type="checkbox"] {
 .checkbox{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px 31px 10px 31px;
+    gap: 12px;
+    padding: 5px 31px 10px 31px;
     /* background-color: red; */
     color: var(--color-secondary);
 }
@@ -92,7 +92,7 @@ input[type="checkbox"] {
 
 .checkbox_heading5:not(:last-child) {
     border-bottom: 1px solid #E7E6E6;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 
 /* second card result **************************** */
