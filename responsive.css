@@ -1470,6 +1470,7 @@ padding-bottom: 20px;
 .footer_column {
 /* width: 23%; */
 width: 48%;
+padding-bottom: 30px;
 }
 
 .footer_column ul li{
@@ -1780,6 +1781,10 @@ font-size: 12px;
 
     .detail_heading2{
         font-size: 1.5rem;
+    }
+
+    .footer_bottom {
+        width: 90%;
     }
 
  

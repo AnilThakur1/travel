@@ -1182,8 +1182,9 @@
     color: var(--text-primary);
     font-size: 14px;
 }
-.apps a{
-  padding-bottom: 10px;
+ 
+.apps>a:not(:last-child) {
+    padding-bottom: 10px;
 }
 
 .apps h4{
