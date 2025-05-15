@@ -626,11 +626,20 @@ gap: 35px;
     position: sticky;
     top: 1px;
     background: #ffffff;
-    padding: 30px;
+    padding:20px;
     border-radius: 12px;
     box-shadow: 0px 10px 40px 0px #0000000D;
     border: 1px solid #E7E6E6;   
   }
+
+  .cancel_btn_book{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+   
  
   .price_start {
     margin-bottom: 24px;
@@ -705,7 +714,7 @@ gap: 35px;
   .date_time_item {
     display: flex;
     align-items: center;
-    padding: 16px;
+    padding: 10px;
   }
   
   .divider_line {
@@ -795,10 +804,7 @@ gap: 35px;
     font-weight: 500;
     cursor: pointer;
     width: 100%;
-    margin-left: 0;
-
- 
-    
+    margin-left: 0; 
   }
   
   .book_now_btn:hover {

@@ -1,6 +1,6 @@
 /* list lhead  *********************************** */
 
-.book_now_buttom{
+.book_now_buttom,.cancel_btn_filter{
     display: none;
 }
 
@@ -43,8 +43,8 @@ input[type="checkbox"] {
 .checkbox{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 20px 31px 31px 31px;
+    gap: 15px;
+    padding: 20px 31px 10px 31px;
     /* background-color: red; */
     color: var(--color-secondary);
 }
@@ -52,7 +52,7 @@ input[type="checkbox"] {
 .list_date{
     background-color: var(--bg-primary);
     border-radius: 12px 12px 0 0;
-    padding: 30px;
+    padding: 25px;
 }
 
 .list_question{
@@ -92,7 +92,7 @@ input[type="checkbox"] {
 
 .checkbox_heading5:not(:last-child) {
     border-bottom: 1px solid #E7E6E6;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 /* second card result **************************** */
@@ -291,6 +291,10 @@ padding-right: 5px;
 
 .result_buttom_btn{
     display: none;
+}
+
+.book_now_btn {
+    margin-left: 0;
 }
 
  

@@ -49,7 +49,7 @@
       
 
 
-  <div class="hamburger_mobile">
+  <!-- <div class="hamburger_mobile">
     
     <button onclick="toggleHamburger()" id="hamburger">
       <i class="fa-solid fa-bars hamburger_icon"></i>
@@ -65,9 +65,30 @@
       <li><a href="">Login</a></li>
     </ul>
 
-  </div>
+  </div> -->
  
 
+  <div class="hamburger_mobile">
+  <button onclick="toggleHamburger()" id="hamburger">
+    <i class="fa-solid fa-bars hamburger_icon"></i>
+  </button>
+
+  <div class="navlink_mobile" id="navlink_mobile">
+    <button id="close_btn" class="close_btn">
+      <i class="fa-solid fa-xmark"></i> 
+    </button>
+
+    <input type="text" class="header_search header_search_mobile" placeholder="Search Here" />
+
+    <ul>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Activities</a></li>
+      <li><a href="#">USD</a></li>
+      <li><a href="#">Sign up</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
+</div>
  
 
 
@@ -125,10 +146,16 @@
             <h5 class="checkbox_heading5">Language</h5>
             <h5 class="checkbox_heading5">Rating</h5>
             <h5 class="checkbox_heading5">Specials</h5>
+            <button class="book_now_btn btn_main">Filter Now</button>
 
           </div>
+ 
+
+           <button class="btn_main cancel_btn_book cancel_btn_filter" onclick="book_now()" id="cancel_search_btn">Cancel</button>
 
         </div>
+
+        
 
 
 
@@ -733,15 +760,30 @@
       <div class="footer_column">
         <h4>Newsletter</h4>
         <p class="letter_para">Subscribe to the free newsletter and stay up to date</p>
+
         <form class="newsletter_form">
           <input type="email" placeholder="Your email address">
           <button type="submit">Send</button>
         </form>
-        <div class="apps">
-          <h4>Mobile Apps</h4>
-          <a class="ios" href="#">iOS App</a> <br/>
-          <a class="android" href="#">Android App</a>
-        </div>
+
+        <form class="newsletter_form_mobile">
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Send</button>
+        </form>
+
+
+         <div class="apps">
+      <h4>Mobile Apps</h4>
+  <a href="#">
+    <i class="fa-brands fa-app-store-ios"></i>
+    <span class="app_name">iOS App</span>
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-android"></i>
+    <span class="app_name">Android App</span>
+  </a>
+</div>
       </div>
     </div>
     </div>
@@ -764,10 +806,39 @@
 
   <script>
 
-  function toggleHamburger() {
-  const nav = document.getElementById("navlink_mobile");
-  nav.classList.toggle("active");     
+  // function toggleHamburger() {
+  // const nav = document.getElementById("navlink_mobile");
+  // nav.classList.toggle("active");     
+  // }
+
+
+
+  
+const nav = document.getElementById("navlink_mobile");
+const hamburgerBtn = document.getElementById("hamburger");
+const closeBtn = document.getElementById("close_btn");
+
+function toggleHamburger() {
+  nav.classList.toggle("active");
+}
+
+closeBtn.addEventListener("click", () => {
+  nav.classList.remove("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (!nav.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+    nav.classList.remove("active");
   }
+});
+
+window.addEventListener("scroll", () => {
+  nav.classList.remove("active");
+});
+
+
+
+
 
 </script>
 
@@ -777,8 +848,8 @@
 
 
 <script>
-  function book_now() {
-  document.getElementById("travlingCard").classList.toggle("active");
+   function book_now() {
+   document.getElementById("travlingCard").classList.toggle("active");
   }
 </script>
 

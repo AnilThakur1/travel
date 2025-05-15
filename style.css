@@ -2,6 +2,9 @@
 
 
 /* header section ************************************* */
+ 
+
+
 .header_image {
   min-width: 100%;
   object-fit: cover;
@@ -460,7 +463,7 @@
 .offer_image {
   width: 100%;
   /* height: 606px; */
-  border-radius: 0 12px 12px 0;
+  border-radius: 12px;
 }
 
 .price_bold {
@@ -1099,23 +1102,7 @@
   padding-bottom: 14px;
 }
 
-.apps h4 {
-  margin: 0;
-  padding-bottom: 10px;
-}
 
-.apps a {
-  font-weight: 400;
-  color: var(--text-primary);
-  font-size: 14px;
-}
-
-.apps .ios,
-.android {
-  padding-bottom: 10px;
-  display: inline-block;
-  padding-left: 25px;
-}
 
 .footer_bottom {
   display: flex;
@@ -1131,7 +1118,77 @@
 }
 
 .payment_icons img {
-  width: 40px;
-  min-width: 40px;
+  width: 30px;
+  min-width: 30px;
 
 }
+
+
+
+
+
+
+/* newsletter_form_mobile   *********** */
+.newsletter_form_mobile{
+ display: none;
+ gap: 10px;
+ /* flex-direction: column; */
+ flex-wrap: wrap;
+ padding-bottom: 20px;
+ 
+}
+
+.newsletter_form_mobile input{
+  padding: 15px 8px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #E7E6E6;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400; 
+}
+
+.newsletter_form_mobile button{
+
+  /* margin-top: 20px; */
+  padding: 10px 30px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #E7E6E6;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400; 
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+}
+
+
+/* *************** */
+.apps{
+  display: flex;
+  flex-direction: column;  
+   
+}
+
+.apps a i{
+  padding-right: 5px;
+   color: var(--text-primary);
+   font-size: 1rem;
+}
+
+
+.app_name{
+    font-weight: 400;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+.apps a{
+  padding-bottom: 10px;
+}
+
+.apps h4{
+  margin-bottom: 10px;
+}
+ 
+
+ 
